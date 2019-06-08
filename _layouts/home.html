@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{% include head.html %}
+<body class="site{% if site.animated %} animated fade-in-down{% endif %}">
+  {% if site.google_tag_manager %}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% endif %}
+	{% if site.facebook_comments %}
+		<div id="fb-root"></div>
+		<script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId={{ site.facebook_appid }}";
+        fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+	{% endif %}
+
+  <div class="site-wrap">
+    {% include header.html %}
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="center px3 py1 bg-gray bg-cover bg-center overflow-auto"
+        style="background-image: url({{ site.cta_background}})">
+        <h1 class="h1 h0-responsive caps mt0 mb0 regular">{{ site.location }} Locksmith</h1>
+        <p class="h3">Your Neighborhood Locksmith Service </p>
+        <div class="sm-col sm-col-6 md-col-6 lg-col-6">
+            <a href="tel:+1-855-321-6736">
+                    <h3 class="fg-white">
+                        855-321-OPEN
+                        <p>Call and get upfront pricing and honesty</p>
+                    </h3>
+            </a>
+            <div class="col-12">
+                <img class="fit" src="{{ site.cta_small_image}}" />
+            </div>
+        </div>
+        <div class="sm-col sm-col-6 md-col-6 lg-col-6">
+            <div class="container px2 py3">
+                    <a class="btn px1 py1 not-rounded btn-primary nohover" href="tel:+1-855-321-6736">
+                            Click to Call. 855-321-OPEN
+                    </a>
+            </div>
+            <ol class="left-align home-list">
+                <li style="width: 90%">{{ site.location }} Car Lockouts. We can unlock any Car.</li>
+                <li style="width: 90%">Can cut keys for Any Vehicle.</li>
+                <li style="width: 90%">Residential or Commercial re-keys, installations and more...</li>
+                <li style="width: 90%">{{site.location}} Fleet Locksmith work is available for any type of vehivle. </li>
+                <li style="width: 90%">We can program any type of Proxy Keys or Remote Keys</li>
+            </ol>
+        </div>
+      </div>
+      <section class="container px2 py3">
+          <div class="clearfix mxn2">
+            <div class="sm-col sm-col-4 px2">
+              <h2 class="h1 mb0">Residential</h2>
+              <p>{{site.location}} residential locksmith work. We can do rekeys, replacements, lockouts, and more. 
+              </p>
+            </div>
+            <div class="sm-col sm-col-4 px2">
+              <h2 class="h1 mb0">Commercial</h2>
+              <p>Our technicians can rekey commercial locks, have experience with security systems, and do door and lock installations for commercial properties.</p>
+            </div>
+            <div class="sm-col sm-col-4 px2">
+              <h2 class="h1 mb0">Automotive</h2>
+              <p>Experienced automotive technicians. We can cut new keys for any vehicle, and can program all Proxy and Remote Keys. Also can do lockouts for any vehicle.</p>
+            </div>
+          </div>
+      </section>
+      <div>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>
