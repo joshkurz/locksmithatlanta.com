@@ -3,7 +3,7 @@ layout:     post
 title:      How to Fix a Car Door Lock Stuck in Lock Position
 date:       2015-07-11
 summary:    Car door lock stuck in the lock position? Call Open Sesame and we will have it fixed in no time. Our professionals have fixed many types of doors. No matter the issue, give us a call and we can help.
-categories: jekyll pixyll
+categories: blog locksmith-car-door-lock
 ---
 
 If you find yourself in the position of having your car door stuck in the locked position, this guide will hopefully remedy your

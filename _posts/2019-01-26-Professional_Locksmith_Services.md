@@ -3,7 +3,7 @@ layout: post
 title: Professional Locksmith Services in Atlanta
 date: 2019-01-26 19:22
 summary: Atlanta Locksmith services offered in by Open Sesame. We strive to take care of our customers wherever that may take us. Give us a call at 855-321-OPEN to schedule and appointment.
-categories: jekyll pixyll
+categories: blog locksmith-services
 ---
 
 Open Sesame is proud to serve our local communities.
